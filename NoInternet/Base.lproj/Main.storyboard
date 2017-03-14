@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NoInternet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-internet" translatesAutoresizingMaskIntoConstraints="NO" id="52h-c2-pOw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signal" translatesAutoresizingMaskIntoConstraints="NO" id="38p-ce-v0V">
+                                <rect key="frame" x="94" y="217.5" width="187" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="MKi-ke-Wb1"/>
+                                    <constraint firstAttribute="height" constant="98" id="vUX-Rs-Ifr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cyclereturn" translatesAutoresizingMaskIntoConstraints="NO" id="9rJ-d0-SE0">
+                                <rect key="frame" x="337" y="347" width="38" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tower" translatesAutoresizingMaskIntoConstraints="NO" id="4ah-c1-3Ar">
+                                <rect key="frame" x="80.5" y="255.5" width="240" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="IZO-G6-2uD"/>
+                                    <constraint firstAttribute="height" constant="156" id="Vp8-SI-Exw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cycle" translatesAutoresizingMaskIntoConstraints="NO" id="T6f-7S-fX8">
+                                <rect key="frame" x="253" y="324" width="83" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Internet Connection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4e-k9-ik8">
+                                <rect key="frame" x="16" y="594" width="343" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.19297358393669128" green="0.46621835231781006" blue="0.54233503341674805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4ah-c1-3Ar" firstAttribute="top" secondItem="38p-ce-v0V" secondAttribute="bottom" constant="-60" id="0Va-f8-srh"/>
+                            <constraint firstItem="4ah-c1-3Ar" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5mo-cX-6xM"/>
+                            <constraint firstAttribute="trailing" secondItem="52h-c2-pOw" secondAttribute="trailing" id="67P-K8-PC8"/>
+                            <constraint firstItem="38p-ce-v0V" firstAttribute="leading" secondItem="4ah-c1-3Ar" secondAttribute="trailing" constant="-226.5" id="FHO-L6-Zyg"/>
+                            <constraint firstItem="52h-c2-pOw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HPs-gR-gEU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="52h-c2-pOw" secondAttribute="bottom" id="LXd-kU-8q9"/>
+                            <constraint firstItem="38p-ce-v0V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xy8-TE-9bB"/>
+                            <constraint firstItem="52h-c2-pOw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ffL-mr-NmK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M4e-k9-ik8" secondAttribute="trailing" id="nV3-5u-X7h"/>
+                            <constraint firstItem="M4e-k9-ik8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="v8U-gH-Sji"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M4e-k9-ik8" secondAttribute="bottom" constant="50" id="yWa-gn-8ND"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cycleLayer" destination="T6f-7S-fX8" id="24f-AU-ZbL"/>
+                        <outlet property="cycleReturnLayer" destination="9rJ-d0-SE0" id="qMa-QK-DbI"/>
+                        <outlet property="signalLayer" destination="38p-ce-v0V" id="WDh-bU-A02"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cycle" width="151" height="89"/>
+        <image name="cyclereturn" width="38" height="24"/>
+        <image name="no-internet" width="640" height="1136"/>
+        <image name="signal" width="217" height="134"/>
+        <image name="tower" width="408" height="269"/>
+    </resources>
+</document>
